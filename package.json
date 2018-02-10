@@ -1,0 +1,44 @@
+{
+  "name": "national-code",
+  "version": "1.0.1",
+  "author": "@arashmanteghi <arash.manteghi@gmail.com> (http://arashm.net)",
+  "description": "Simple library to validate Iranian national code.",
+  "license": "MIT",
+  "keywords": [
+    "javascript",
+    "library",
+    "national",
+    "code",
+    "validation"
+  ],
+  "bugs": {
+    "url": "https://github.com/arashmanteghi/national-code/issues",
+    "email": "arash.manteghi@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arashmanteghi/national-code.git"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config conf/webpack.dev.js",
+    "lint": "eslint ./src/**.js",
+    "coverage": "jest --coverage --config=conf/jest.config.js",
+    "test": "jest --config=conf/jest.config.js",
+    "test:watch": "jest --watch"
+  },
+  "devDependencies": {
+    "babel-core": "6.26.0",
+    "babel-eslint": "7.2.3",
+    "babel-jest": "20.0.3",
+    "babel-loader": "7.1.2",
+    "babel-preset-env": "1.6.0",
+    "eslint": "4.5.0",
+    "eslint-loader": "1.9.0",
+    "html-webpack-plugin": "2.30.1",
+    "jest": "20.0.4",
+    "webpack": "3.5.5",
+    "webpack-dev-server": "2.7.1",
+    "webpack-merge": "4.1.0"
+  }
+}
