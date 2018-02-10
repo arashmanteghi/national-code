@@ -57,6 +57,19 @@
     for (let $i = 2; $i <= 10; $i++) {
       sum = sum + intCode[$i] * $i;
     }
+
+    /*
+      Check if national code is valid or not
+    */
+    let leftOver = sum % 11;
+    if (
+      ((leftOver >= 2 && ((11 - leftOver) === intCode[1])) && !hasSameNumber) ||
+      ((leftOver < 2 && leftOver === intCode[1]) && !hasSameNumber)
+    ) {
+      return true;
+    } else {
+      return false;
+    }
   }
 
   if (typeof module !== 'undefined' && module.exports) {
