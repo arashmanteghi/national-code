@@ -30,13 +30,25 @@
     const inputValue = arguments[0];
     let intCode = [];
     let counter = 0;
+    let sum = 0;
+    let hasSameNumber = true;
 
     /*
-      normalize input number to start calculating
-      input number starts from index 1 reversely
+      normalize input number to start calculating.
+      input number starts from index 1 reversely.
     */
     for (let $i = 9; $i >= 0; $i--) {
       intCode[++counter] = parseInt(inputValue[$i]);
+    }
+
+    /*
+      Check input value has same number or not
+    */
+    for (let $i = 2; $i <= 10; $i++) {
+      if (intCode[1] !== intCode[$i]) {
+        hasSameNumber = false;
+        break;
+      }
     }
 
   }
