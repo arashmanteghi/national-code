@@ -26,6 +26,19 @@
       console.error('input is not 10 digit: ', arguments[0].length);
       return false;
     }
+
+    const inputValue = arguments[0];
+    let intCode = [];
+    let counter = 0;
+
+    /*
+      normalize input number to start calculating
+      input number starts from index 1 reversely
+    */
+    for (let $i = 9; $i >= 0; $i--) {
+      intCode[++counter] = parseInt(inputValue[$i]);
+    }
+
   }
 
   if (typeof module !== 'undefined' && module.exports) {
