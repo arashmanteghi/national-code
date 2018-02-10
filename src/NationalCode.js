@@ -51,6 +51,12 @@
       }
     }
 
+    /*
+      Calculate sum of digits after multiplication
+    */
+    for (let $i = 2; $i <= 10; $i++) {
+      sum = sum + intCode[$i] * $i;
+    }
   }
 
   if (typeof module !== 'undefined' && module.exports) {
