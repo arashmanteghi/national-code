@@ -6,7 +6,7 @@ module.exports = {
   context: path.join(process.cwd(), 'src'), // the home directory for webpack
   devtool: 'source-map', // enhance debugging by adding meta info for the browser devtools
   entry: {
-    app: './index.js'
+    app: './demo.js'
   },
   output: {
     filename: '[name].js'
@@ -37,7 +37,7 @@ module.exports = {
       name: 'vendor'
     }),
     new HtmlWebpackPlugin({
-      template: 'index.html'
+      template: 'demo.html'
     })
   ],
   devServer: {

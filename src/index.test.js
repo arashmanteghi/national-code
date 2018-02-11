@@ -1,4 +1,4 @@
-import nationalCode from './NationalCode';
+import nationalCode from './index';
 
 describe('National code validation test', () => {
   test('should return true', () => {
