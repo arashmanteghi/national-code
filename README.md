@@ -24,13 +24,6 @@ yarn add national-code
 ## Usage
 
 ```js
-var nationalCode = require('national-code');
-nationalCode('4839941637'); // => true
-```
-
-or:
-
-```js
 import nationalCode from 'natioanl-code';
 nationalCode(4839941637); // => true
 nationalCode(4839941638); // => false
@@ -38,6 +31,14 @@ nationalCode('4839941637'); // => true
 nationalCode('4839941638'); // => false
 nationalCode('2222222222'); // => false
 nationalCode(3333333333); // => false
+```
+
+or:
+
+
+```js
+var nationalCode = require('national-code');
+nationalCode('4839941637'); // => true
 ```
 
 
@@ -54,6 +55,7 @@ nationalCode(3333333333); // => false
 ## Commands
 
 - `npm start` - start the dev server
+- `npm run build` - build as production
 - `npm run lint` - run an ESLint check
 - `npm run coverage` - run code coverage and generate report in the `coverage` folder
 - `npm test` - run all tests
