@@ -1,6 +1,6 @@
 {
   "name": "national-code",
-  "version": "1.0.1",
+  "version": "0.0.2",
   "author": "@arashmanteghi <arash.manteghi@gmail.com> (http://arashm.net)",
   "description": "Simple library to validate Iranian national code.",
   "license": "MIT",
@@ -19,7 +19,7 @@
     "type": "git",
     "url": "https://github.com/arashmanteghi/national-code.git"
   },
-  "main": "src/index.js",
+  "main": "src/NationalCode.js",
   "scripts": {
     "start": "webpack-dev-server --config conf/webpack.dev.js",
     "lint": "eslint ./src/**.js",
