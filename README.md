@@ -47,14 +47,14 @@ nationalCode('4839941637'); // => true
 
 1. `git clone https://github.com/arashmanteghi/national-code.git`
 2. Run `npm install`
-3. Start the dev server using `npm start`
+3. Start the http-server using `npm start`
 3. Open [http://localhost:9000](http://localhost:9000)
 
 
 
 ## Commands
 
-- `npm start` - start the dev server
+- `npm start` - start the http-server
 - `npm run build` - build as production
 - `npm run lint` - run an ESLint check
 - `npm run coverage` - run code coverage and generate report in the `coverage` folder
